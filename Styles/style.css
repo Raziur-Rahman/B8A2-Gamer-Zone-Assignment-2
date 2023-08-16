@@ -83,7 +83,7 @@
 
 .bannar {
     width: 50%;
-    background-image: url(images/Group\ 14.png);
+    background-image: url(/images/Group\ 14.png);
     background-size: 100%;
     text-indent: 25%;
 }
@@ -175,16 +175,18 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 200px;
+    padding: 10px 200px;
     justify-content: center;
+    margin: 40px 0;
 }
 
 .more-game {
     display: flex;
     align-items: center;
     padding: 10px;
-    /* font-size: 14px; */
     font-weight: 600;
+    background-color: white;
+    border: none;
 }
 
 .more-game img {
