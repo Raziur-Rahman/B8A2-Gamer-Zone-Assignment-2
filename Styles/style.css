@@ -121,6 +121,21 @@
     width: 75%;
     padding-left: 40px;
 }
+/* play instant sections style  */
+.play-instant-container{
+    padding: 0 200px;
+    margin: 10px 0 40px;
+    border: 2px solid red;
+}
+.play-instant{
+    border: 2px solid slateblue;
+    display: flex;
+
+}
+.instantPlay-image{
+    border: 2px solid black;
+    width: 100%;
+}
 
 /* online games section */
 
