@@ -123,43 +123,39 @@
 }
 
 /* play instant sections style  */
+
 .play-instant-container {
-    padding: 0 200px 80px 350px;
-    margin: 50px 0 40px;
-    border: 2px solid red;
+    display: flex;
+    gap: 90px;
+    padding: 10px 200px 40px;
 }
 
-.play-instant {
-    display: flex;
-    justify-content: center;
-
+.instant-text {
+    text-align: right;
+    width: 50%;
+    padding-left: 170px;
+    align-items: center;
 }
 
 .instantPlay-image {
-    height: 400px;
+    width: 50%;
+    position: relative;
+}
+
+.instantPlay-image img {
+    width: 400px;
 }
 
 .over-image {
-    position: relative;
-    top: 220px;
-    left: 110px;
-    padding-bottom: 100px;
+    width: 200px;
+    position: absolute;
+    bottom: -50px;
+    left: -70px;
 }
 
-.over-image img {
+#image_overlay {
     width: 200px;
 }
-
-/* .over-image{
-    width: 50%;
-    display: flex;
-}
-.overlay-img{
-    height: 200px;
-    position: relative;
-    top: 220px;
-    left: 110px;
-} */
 
 .instant-text h1 {
     color: #0B0223;
@@ -169,14 +165,10 @@
 
 .instant-text p {
     color: #534C64;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
 }
-.instant-text{
-    border: 2px solid green;
-    text-align: right;
-    width: 50%;
-}
+
 #Play-Instantly {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -187,8 +179,7 @@
 /* online games section */
 
 .online-games-container {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding: 10px 200px;
     margin-top: 8vh;
 }
 
@@ -231,6 +222,34 @@
 .innar-card img {
     width: 100%;
 }
+
+.card-img {
+    position: relative;
+}
+
+.overlay-card {
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.card-img:hover .overlay-card {
+    opacity: 1; /* Make the overlay visible on hover */
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 53%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+  }
 
 /* more games section */
 .extra-games {

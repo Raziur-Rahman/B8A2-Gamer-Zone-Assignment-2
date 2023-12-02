@@ -1,4 +1,4 @@
-@media screen and (max-width:576px) {
+@media screen and (min-width:576px) and (max-width: 768px) {
 
     .header-manu,
     .nav-items {
@@ -75,7 +75,7 @@
 
     .online-game {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
         padding: 0 50px;
     }
@@ -83,49 +83,41 @@
     /* instant gaming sections styles  */
 
     .play-instant-container {
-        padding: 0 50px;
-        margin: 0;
-        /* border: 2px solid red; */
-    }
-    
-    .play-instant {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
+        gap: 10px;
+        padding: 10px 0 30px;
     }
-    .instant-text h1 {
-        font-size: 7vw;
-    }
-    
-    .instant-text p {
-        font-size: 3vw;
+    .instant-text{
+        text-align: left;
+        width: 50%;
+        padding-left: 0;
+        align-items: center;
     }
     .instantPlay-image{
-        height: auto;
-        width: 100%;
-    }
-
-    .instant-text{
-        text-align: center;
-    }
-    .over-image {
+        width: 50%;
+        display: flex;
+        justify-content: end;
         position: relative;
-        top: 220px;
-        left: 0px;
+    }
+    .instantPlay-image img{
+        width: 350px;
+    }
+    .over-image{
+        width: 200px;
+        position: absolute;
+        bottom: -50px;
+        left: -25px;
+    }
+    #image_overlay{
+        width: 170px;
     }
     
-    .over-image img {
-        width: 30vw;
-    }
     /* more games section */
     .extra-games {
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 5px;
-        /* padding: 10px 0; */
         justify-content: center;
-        /* margin: 0; */
     }
     .more-game {
         display: flex;
@@ -137,33 +129,4 @@
         margin-right: 5px;
         height: 25px;
     }
-
-    /* footer section */
-    .footer-links {
-        display: grid;
-        row-gap: 1rem;
-        grid-template-columns: auto auto auto;
-    }
-
-    .social-links {
-        display: grid;
-        row-gap: 1rem;
-        grid-template-columns: auto auto auto;
-    }
-
-    .more-links {
-        display: grid;
-        row-gap: 5px;
-        grid-template-columns: auto auto;
-    }
-
-    .copyRight {
-        margin-top: 5px;
-        display: grid;
-        row-gap: 5px;
-        grid-template-columns: auto;
-    }
-
-
-
 }
